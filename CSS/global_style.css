@@ -1,0 +1,11 @@
+body{
+	font-family:Verdana;
+}
+div.page_content{
+	margin:auto;
+	width:90%;
+	text-align:center;
+}
+.menu nav a:hover {
+	text-decoration:underline;
+}

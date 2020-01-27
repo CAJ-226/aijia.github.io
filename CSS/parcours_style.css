@@ -1,0 +1,63 @@
+#frame{
+	position:relative;
+}
+/*define timeline string position*/
+#outline{
+	list-style:none;
+	border-left:3px solid rgb(76,113,82);
+	position:absolute;
+	left:750px;
+}
+#outline li.outerlist div{
+	display:inline-block;
+	margin-right:40px;
+	vertical-align:top;
+}
+/*circle*/
+.cerclesymbole{
+	height:30px;
+	width:30px;
+	border-radius:15px;
+	background-color:rgb(245,173,75);
+}
+/* move year bloc to left side of ul*/
+#outline li.outerlist{
+	margin-left:-305px;
+	width:970px;
+}
+.event{
+	width:600px;
+	height:auto;
+	border:1px solid;
+	border-radius:5px;
+	background-color:rgba(76,113,82,0.25);
+	box-shadow:5px 5px 5px rgba(76,113,82,0.75);
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+#outline li.outerlist + li.outerlist {
+	margin-top:30px;
+}
+.event p.eventtitle{
+	margin-top:0px;
+	text-align:center;
+	font-weight:bold;
+	padding:0px;
+}
+.event p.eventinfor{
+	padding:10px;
+	text-align:center;
+	margin-top:0px;
+	font-style:italic;
+}
+
+.years{
+	width:200px;
+	text-align:right;
+}
+
+.innerlist{
+	list-style-type:disc;
+	text-align:left;
+}

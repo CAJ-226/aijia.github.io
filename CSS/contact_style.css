@@ -1,0 +1,21 @@
+div.contact{
+	max-width:600px;
+	margin:auto;
+	text-align:left;
+	margin-top:30px;
+	padding-left:300px;
+}
+.contact img{
+	width:2em;
+	height:2em;
+	vertical-align:middle;
+	margin-right:5px;
+}
+
+.contact p{
+	font-size:20px;
+	text-align:left;
+}
+span img:hover{
+	height:101%;
+}
