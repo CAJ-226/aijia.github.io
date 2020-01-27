@@ -10,6 +10,8 @@ nav{
 	width:100%;
 	background-color:#3B6F40;
 	padding:0px;
+	z-index:1;
+	top:0px;
 }
 div.menu h1{
 	font-size:60px;
@@ -45,7 +47,4 @@ nav li{
 	padding:0px;
 	margin:5px;
 	text-align:center;
-}
-nav li a:visited{
-text-decoration:underline;
 }
