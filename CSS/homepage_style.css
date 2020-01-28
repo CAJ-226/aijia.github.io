@@ -1,0 +1,42 @@
+div.presentation{
+	background-color:black;
+	color:white;
+	box-shadow:10px 10px 10px #3D3232;
+	padding:0px;
+}
+.presentation div{
+	display:inline-block;
+	vertical-align:top;
+	width:32.5%;
+}
+.presentation div:first-child{
+	padding-top:50px;
+}
+.presentation div:last-child{
+	padding-top:50px;
+
+}
+.presentation p{
+	font-size:3em;
+	text-align:left;
+	margin-bottom:50px;
+}
+.presentation p + p {
+	font-size:2em;
+	text-align:right;
+}
+.presentation p + p + p {
+	font-size:1.5em;
+	text-align:left;
+}
+.presentation p + p + p + p {
+	font-size:2em;
+	text-align:center;
+}
+.presentation a{
+	color:white;
+	text-decoration:none;
+}
+.presentation a:hover{
+	text-decoration:underline;
+}
