@@ -1,37 +1,40 @@
+@media only screen and (max-width:768px){
+	.presentation div:first-child{
+		display:none;
+	}
+	.presentation div:last-child{
+		display:none;
+	}
+}
 div.presentation{
 	background-color:black;
 	color:white;
 	box-shadow:10px 10px 10px #3D3232;
 	padding:0px;
 }
-.presentation div{
-	display:inline-block;
-	vertical-align:top;
-	width:32.5%;
+div.presentation::after{
+	content:"";
+	clear:both;
+	display:table;
 }
-.presentation div:first-child{
-	padding-top:50px;
+.presentation div{
+	float:left;
 }
 .presentation div:last-child{
-	padding-top:50px;
+	margin-top:300px;
 
 }
-.presentation p{
-	font-size:3em;
-	text-align:left;
-	margin-bottom:50px;
+img{
+	max-width:100%
+	height:auto;
 }
-.presentation p + p {
-	font-size:2em;
+.presentation h2{
+	text-align:left;
+	margin-bottom:20px;
+}
+.presentation h3 {
 	text-align:right;
-}
-.presentation p + p + p {
-	font-size:1.5em;
-	text-align:left;
-}
-.presentation p + p + p + p {
-	font-size:2em;
-	text-align:center;
+	margin-bottom:20px;
 }
 .presentation a{
 	color:white;

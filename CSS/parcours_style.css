@@ -1,12 +1,28 @@
 #frame{
 	position:relative;
 }
-/*define timeline string position*/
+
+@media only screen and (max-width:768px){
+	.event::before{
+		content:attr(title);
+		display:block;
+		margin-bottom:20px;
+		text-decoration:underline;
+	}
+	.cerclesymbole{
+		visibility:hidden;
+	}
+}
+@media only screen and (min-width:768px){
+	/*define timeline string position*/
 #outline{
 	list-style:none;
 	border-left:3px solid rgb(76,113,82);
-	position:absolute;
-	left:750px;
+	margin:auto;
+	width:768px;
+	margin:0 auto 0 auto;
+	
+}
 }
 #outline li.outerlist div{
 	display:inline-block;
