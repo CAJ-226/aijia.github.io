@@ -13,7 +13,7 @@ div.cubeframe{
 div.progression{
 	position:absolute;
 	bottom:0px;
-	width:331px;
+	width:100%;
 	animation-duration:2s;
 	animation-fill-mode:forwards;
 	opacity:0.75;
@@ -90,7 +90,7 @@ p.percentage.wp{
 /*CH progression cube animation*/
 @keyframes progressionCH {
 	from {height:0px;}
-	to {height:331px;background-color:#5DBD23;}
+	to {height:100%;background-color:#5DBD23;}
 }
 
 /* apply CH animation*/
