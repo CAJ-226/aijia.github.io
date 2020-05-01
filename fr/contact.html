@@ -21,6 +21,22 @@
 			<li class="col-3 col-s-1"><a href="contact.html">Contact</a></li>
 		</ul>
 		</nav>
+		<div class="burger-menu">
+			<div class="burger-menu-bouton">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="burger-menu-affiche">
+				<ul>
+					<li><a href="../index.html">Présentation</a></li>
+					<li><a href="capacity.html">Compétences</a></li>
+					<li><a href="parcours.html">Expériences</a></li>
+					<li><a href="contact.html">Contact</a></li>
+
+				</ul>
+			</div>
+	</div>
 	<div class="page_content col=12">
 		<div class="contact">
 			<p><img src="../IMAGE/email.svg"/><strong>E-mail : </strong>chenaijia226@gmail.com</p>
@@ -48,3 +64,19 @@
 		</a>
 	</div>
 </body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+	$(document).ready(function(){
+	$(".burger-menu-bouton").click(function(){
+		$(".burger-menu-affiche").fadeToggle();
+		$(".burger-menu-bouton span:first").toggleClass("rotation45");
+		$(".burger-menu-bouton span:eq(1)").toggleClass("rotation-45");
+		$(".burger-menu-bouton span:last").fadeToggle(500);
+	});
+	$(window).scroll(function(){
+		if ($(document).scrollTop() > 300){
+			$(".burger-menu-bouton").fadeIn(500);
+		}else{$(".burger-menu-bouton").fadeOut(500);};
+	});
+})
+</script>
