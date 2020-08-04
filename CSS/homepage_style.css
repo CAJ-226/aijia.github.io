@@ -52,9 +52,6 @@ img{
 	width:80%;
 	flex-wrap:wrap;
 }
-.reverse-row{
-	flex-direction:row-reverse;
-}
 .flex-item{
 	padding:10px;
 }
@@ -63,6 +60,24 @@ img{
 	text-align:justify;
 	width:500px;
 	line-height:2;
+	position:relative;
+	left:800px;
+	transition:1s ease-in-out;
+	visibility:hidden;
+}
+.flex-img{
+	position:relative;
+	left:-800px;
+	transition:1s ease-in-out;
+	visibility:hidden;
+}
+#textTr{
+	left:-800px;
+	visibility:hidden;
+}
+#imgTr{
+	left:800px;
+	visibility:hidden;
 }
 .flex-text:first-letter{
 	font-weight:bold;
