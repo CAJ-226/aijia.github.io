@@ -62,13 +62,13 @@ img{
 	line-height:2;
 	position:relative;
 	left:800px;
-	transition:1s ease-in-out;
+	transition:1s ease-out;
 	visibility:hidden;
 }
 .flex-img{
 	position:relative;
 	left:-800px;
-	transition:1s ease-in-out;
+	transition:1s ease-out;
 	visibility:hidden;
 }
 #textTr{
