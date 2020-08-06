@@ -1,48 +1,63 @@
 @media only screen and (max-width:768px){
-	.presentation div:first-child{
-		display:none;
+	.homepage{
+		display : none;
 	}
-	.presentation div:last-child{
-		display:none;
+	.mobileText{
+		width:100%;
+		text-align: justify;
+		background-color:  #cccc66;
+		border:5px solid white;
+		padding:10px;
+		position:relative;
+		margin-bottom:80px;
+		line-height:1.6;
+		left:-600px;
+		transition:1s ease;
 	}
-}
-div.presentation{
-	background-color:black;
-	color:white;
-	box-shadow:10px 10px 10px #3D3232;
-	padding:0px;
-}
-div.presentation::after{
-	content:"";
-	clear:both;
-	display:table;
-}
-.presentation div{
-	float:left;
-}
-.presentation div:last-child{
-	margin-top:300px;
+	.mobileText:after{
+		content:attr(title);
+		width:100px;
+		height:100px;
+		line-height:100px;
+		border:5px solid #cccc66;
+		border-radius:50%;
+		background-color:white;
+		display:block;
+		text-align:center;
+		font-size:28px;
+		font-weight:bold;
+		color:#cccc66;
+		position:absolute;
+		right:5px;
+		bottom:-70px;
 
+	}
+	.mobileText:first-child{
+		background-color: #ffcc66;
+	}
+	.mobileText:first-child:after{
+		border-color: #ffcc66;
+		color:#ffcc66;
+	}
+	.mobileText:last-child{
+		background-color: #66ccff;
+	}
+	.mobileText:last-child:after{
+		border-color:#66ccff;
+		color: #66ccff;
+	}
 }
+@media only screen and (min-width:768px){
+	#mobilecontent{
+		display:none;
+	}
+}
+
 img{
 	max-width:100%
 	height:auto;
 }
-.presentation h2{
-	text-align:left;
-	margin-bottom:20px;
-}
-.presentation h3 {
-	text-align:right;
-	margin-bottom:20px;
-}
-.presentation a{
-	color:white;
-	text-decoration:none;
-}
-.presentation a:hover{
-	text-decoration:underline;
-}
+
 .container{
 	display:flex;
 	flex-direction:row;

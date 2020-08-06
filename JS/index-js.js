@@ -28,4 +28,15 @@ window.onload = function(){
 		}
 	}
 
+
+	var mobileText = document.getElementsByClassName("mobileText");
+	var count = 0;
+	var timer = setInterval(function(){
+		mobileText[count].style.left = 0;
+		count++;
+		if(count == 3){
+			clearInterval(timer);
+		}
+	},500)
+
 }
